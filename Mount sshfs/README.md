@@ -1,4 +1,4 @@
-MacOsx
+Mount Sshfs
 ======
 
-My utility for Mac Osx
+Scripts to connect via ssh and mount disk
