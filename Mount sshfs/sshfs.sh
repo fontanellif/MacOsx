@@ -37,15 +37,15 @@
 
 
   if [ "$1" = "-h" ]; then
-    echo "Usage: hostname login password localPath volname"
+    echo "Usage: hostname port login password localPath volname"
   else
 
 
   # -- SSH parameters
   sshHostname=$1
-  sshPort="22"
-  sshLogin=$2
-  sshPassword=$3
+  sshPort=$2
+  sshLogin=$3
+  sshPassword=$2
 
   # -- SSHFS parameters
   remotePath="/"
