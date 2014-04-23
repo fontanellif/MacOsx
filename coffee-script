@@ -1,0 +1,19 @@
+# Install Homebrew
+ 
+ruby <(curl -fsSk https://raw.github.com/mxcl/homebrew/go)
+ 
+# Follow on-screen instructions (X11 isn't necessary for this if it shows as not installed)
+ 
+brew install node
+ 
+# Open .bashrc and add this line (create .bashrc if its not in your home directory already)
+ 
+export NODE_PATH=/usr/local/lib/node_modules
+ 
+# Install NPM
+ 
+curl https://npmjs.org/install.sh | sh
+ 
+# Install CoffeeScript
+ 
+npm install -g coffee-script
