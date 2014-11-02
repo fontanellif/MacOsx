@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
 	<key>AMApplicationBuild</key>
-	<string>381</string>
+	<string>409</string>
 	<key>AMApplicationVersion</key>
-	<string>2.4</string>
+	<string>2.5</string>
 	<key>AMDocumentVersion</key>
 	<string>2</string>
 	<key>actions</key>
@@ -51,7 +51,7 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>on run {input, parameters}		return " http://www.google.com/translate_t?langpair=auto|it&amp;text=" &amp; (input as string)	end run</string>
+					<string>on run {input, parameters}set output to "http://translate.google.com/translate_t?sl=it...&amp;tl=it...&amp;text=" &amp; urldecode(input as string)return outputend runon urldecode(x)set cmd to "'require \"cgi\"; puts CGI.escape(STDIN.read.chomp)'"do shell script "echo " &amp; quoted form of x &amp; " | ruby -e " &amp; cmdend urldecode</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
@@ -68,15 +68,15 @@
 				<key>Class Name</key>
 				<string>RunScriptAction</string>
 				<key>InputUUID</key>
-				<string>F1C71CAC-F074-43CF-BA43-B336F0FA7910</string>
+				<string>FBFAC5C9-77AD-4554-AB59-D465F8B9A35E</string>
 				<key>Keywords</key>
 				<array>
 					<string>Run</string>
 				</array>
 				<key>OutputUUID</key>
-				<string>1B30D40C-E8A0-4D99-BE5A-5949BAF70B15</string>
+				<string>F15FFD16-FBCE-450F-A5A1-AF685E346502</string>
 				<key>UUID</key>
-				<string>1C38599B-CA36-49DD-8961-B9375E3851CB</string>
+				<string>E3B80FD7-A5CE-4EA5-993C-C4B89A441FD7</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Automator</string>
@@ -105,9 +105,9 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>500.500000:481.000000</string>
+				<string>449.000000:316.000000</string>
 				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/English.lproj/main.nib</string>
+				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<true/>
@@ -165,15 +165,15 @@ end run</string>
 					<key>outputTypeTag</key>
 					<integer>0</integer>
 					<key>positionTag</key>
-					<integer>1</integer>
+					<string>0</string>
 					<key>sizeFormatTag</key>
-					<integer>2</integer>
+					<integer>99</integer>
 					<key>targetSizeX</key>
-					<real>320</real>
+					<integer>750</integer>
 					<key>targetSizeY</key>
-					<real>480</real>
+					<integer>370</integer>
 					<key>userAgentTag</key>
-					<integer>1</integer>
+					<integer>0</integer>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.Website_Popup</string>
@@ -190,13 +190,13 @@ end run</string>
 				<key>Class Name</key>
 				<string>AMWebsitePoppupAction</string>
 				<key>InputUUID</key>
-				<string>38BB2EF9-F04D-4F1F-B5EA-D90F37956CDF</string>
+				<string>31BF0AF1-ACFA-4D98-98E8-E3A307EB79D9</string>
 				<key>Keywords</key>
 				<array/>
 				<key>OutputUUID</key>
-				<string>70E3E600-C725-4F5F-ACB2-D209A302944C</string>
+				<string>5FED8BA4-A129-43C1-A3EC-B0A8757F8E63</string>
 				<key>UUID</key>
-				<string>DAA3B7C5-4890-4662-8C31-F135FF506520</string>
+				<string>287B9B38-A1A7-47EE-84AB-D1C1A740204A</string>
 				<key>UnlocalizedApplications</key>
 				<array>
 					<string>Safari</string>
@@ -285,7 +285,7 @@ end run</string>
 				<key>isViewVisible</key>
 				<true/>
 				<key>location</key>
-				<string>500.500000:168.000000</string>
+				<string>449.000000:464.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Website Popup.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -295,20 +295,16 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>E72F0753-73DC-4C6D-BED1-25A61F924C5F</key>
+		<key>FC903540-9742-43C2-9549-91601A61D865</key>
 		<dict>
 			<key>from</key>
-			<string>1C38599B-CA36-49DD-8961-B9375E3851CB - 1C38599B-CA36-49DD-8961-B9375E3851CB</string>
+			<string>E3B80FD7-A5CE-4EA5-993C-C4B89A441FD7 - E3B80FD7-A5CE-4EA5-993C-C4B89A441FD7</string>
 			<key>to</key>
-			<string>DAA3B7C5-4890-4662-8C31-F135FF506520 - DAA3B7C5-4890-4662-8C31-F135FF506520</string>
+			<string>287B9B38-A1A7-47EE-84AB-D1C1A740204A - 287B9B38-A1A7-47EE-84AB-D1C1A740204A</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
 	<dict>
-		<key>serviceApplicationBundleID</key>
-		<string></string>
-		<key>serviceApplicationPath</key>
-		<string></string>
 		<key>serviceInputTypeIdentifier</key>
 		<string>com.apple.Automator.text</string>
 		<key>serviceOutputTypeIdentifier</key>
